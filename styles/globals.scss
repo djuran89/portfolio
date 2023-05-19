@@ -1,0 +1,172 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+	--primaryColor: #3c6255;
+	--secoundColor: #eae7b1;
+	--bgColor: #000000;
+	--textColor: #f5f5f7;
+	--borderRadius: 52px;
+	--durationAnimation: 300ms;
+	--iphoneFrameHeight: 2223px;
+	--iphoneFrameWidth: 1092px;
+	--iphoneSreenWidth: 393px;
+	--iphoneSreenHeight: 852px;
+	--iphoneFrameRatio: calc(var(--iphoneFrameHeight) / var(--iphoneFrameWidth));
+	--numberDevice: 4;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		// --bgColor: #ffffff;
+		// --textColor: #333;
+	}
+}
+
+* {
+	font-family: "Noto Sans", sans-serif;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body,
+html {
+	background-color: var(--bgColor);
+	color: var(--textColor);
+	// height: 1000vh;
+	overflow-x: hidden;
+}
+span + span {
+	margin-left: 5px;
+}
+
+.slider {
+	position: relative;
+	// .ifream__holder {
+	// 	position: absolute;
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	width: 80%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	right: -80%;
+	// 	z-index: 3;
+	// 	background-color: #fafafa;
+	// 	color: #000;
+	// 	font-size: 24px;
+	// 	font-weight: 100;
+	// 	box-shadow: -11px 0px 63px 26px rgba(0, 0, 0, 0.7);
+	// 	transition: right var(--durationAnimation) ease-in-out;
+	// }
+	// .ifream__holder.active {
+	// 	right: 0%;
+	// }
+	// iframe {
+	// 	position: absolute;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	top: 0;
+	// 	right: 0;
+	// 	border: none;
+	// 	display: none;
+	// }
+
+	.image__container {
+		position: relative;
+		.image__box {
+			position: relative;
+			display: block;
+			// box-shadow: -11px 0px 63px 26px rgba(0, 0, 0, 0.7);
+			border-radius: var(--borderRadius);
+			// transform: matrix(0.97, -0.03, 0, 1, 0, 0);
+			transition: all var(--durationAnimation) ease-in-out;
+			cursor: pointer;
+			left: 0px;
+			background-color: red;
+			width: calc(var(--iphoneSreenWidth) / 40);
+			width: 100px;
+			height: 100px;
+		}
+		.image__box:hover {
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+		.image__box.active {
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+		.image__box-screen {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 0px;
+			transform: matrix(1, 0, 0, 1, 0, 0);
+		}
+		.image__main {
+			border-radius: var(--borderRadius);
+		}
+		.reflection__wrapper {
+			position: absolute;
+			overflow: hidden;
+			border-radius: var(--borderRadius);
+			top: calc(100% - 45px);
+			.imageReleflection {
+				opacity: 1;
+				filter: blur(3px);
+				clip-path: polygon(-70% 100%, 100% 100%, 100% 73%, -70% 70%);
+				transform: scaleY(-1);
+			}
+			.bg__reflection {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				height: 30%;
+				width: 100%;
+				background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 1) 70%);
+			}
+		}
+	}
+}
+.my-outline {
+	margin-top: -1px;
+	margin-left: -1px;
+	> * {
+		margin-top: 1px;
+		margin-left: 1px;
+		outline-width: 1px;
+		outline-style: solid;
+		outline-color: #000;
+	}
+}
+.filter__image {
+	filter: saturate(0) invert(1);
+}
+.contact {
+	.contact__info > div {
+		margin-bottom: 5px;
+	}
+}
+
+.slider {
+	.image__box {
+		position: absolute;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		// box-shadow: -11px 0px 63px 26px rgba(0, 0, 0, 0.7);
+		// transform: matrix(0.97, -0.03, 0, 1, 0, 0);
+		// transition: all var(--durationAnimation) ease-in-out;
+		left: 0px;
+		// background-color: red;
+		height: calc(var(--iphoneFrameHeight) / 3);
+		width: calc(var(--iphoneFrameWidth) / 3);
+	}
+}
+
+@media only screen and (min-width: 600px) {
+}
+
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
+	}
+}
