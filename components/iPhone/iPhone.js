@@ -4,6 +4,7 @@ import moment from "moment";
 import { Animation } from "../animations/animation";
 
 import style from "./iPhone.module.scss";
+import Link from "next/link";
 
 function IPhone({ url, add = 0 }) {
 	const iphoneRef = useRef(null);
@@ -44,7 +45,11 @@ function IPhone({ url, add = 0 }) {
 							<iframe src={url} allowFullScreen />
 						</div>
 						<div className={style.bottomBar}>
-							<div className={style.url}>{url.replace("https://", "").replace("http://", "")}</div>
+							<div className={style.url}>
+								<Link href={url} target="_blank">
+									{url.replace("https://", "").replace("http://", "")}
+								</Link>
+							</div>
 							<div className={style.homeButton} />
 						</div>
 					</div>
