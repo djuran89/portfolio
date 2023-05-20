@@ -5,7 +5,7 @@ function StartScreen() {
 		scale: { from: 1, to: 1.4, start: 0, duration: 300 },
 		opacity: { from: 1, to: 0, start: 0, duration: 300 },
 		start: 0,
-		duration: 400,
+		duration: 320,
 	};
 
 	const animationScaleIn = {
