@@ -35,9 +35,6 @@ function Summary() {
 					organization.
 				</span>
 				<span>
-					I have extensive experience working as a freelancer in a small team that consisted of designers, backend and frontend developers.
-				</span>
-				<span>
 					For the past 5 years, I have been employed as a software developer at ImWind, an Austrian company that serves clients throughout
 					Europe.
 				</span>
