@@ -31,7 +31,7 @@ function Skills() {
 					<div>Library: Socket.IO, JWT, Chart.js, bcrypt, Three.js, Moment, etc.</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
-					<div>Design: UI/UX, Photoshop, Lightroom, Blender, Sketch, Figma</div>
+					<div>Design: UI/UX, Adobe, Blender, Sketch, Figma</div>
 				</Animation>
 			</div>
 		</section>
