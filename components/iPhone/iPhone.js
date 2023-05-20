@@ -15,6 +15,9 @@ function IPhone({ url, add = 0 }) {
 		add,
 	};
 
+	let shortUrl = url.replace("https://", "").replace("http://", "");
+	shortUrl = shortUrl.length > 16 ? shortUrl.substring(0, 16) + "..." : shortUrl;
+
 	useEffect(() => {
 		const isMobile = window.innerWidth < 768;
 		const numberDevice = isMobile ? 1 : 4;
@@ -47,7 +50,7 @@ function IPhone({ url, add = 0 }) {
 						<div className={style.bottomBar}>
 							<div className={style.url}>
 								<Link href={url} target="_blank">
-									{url.replace("https://", "").replace("http://", "")}
+									{shortUrl}
 								</Link>
 							</div>
 							<div className={style.homeButton} />
