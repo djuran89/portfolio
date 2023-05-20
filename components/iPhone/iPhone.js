@@ -16,7 +16,7 @@ function IPhone({ url, add = 0 }) {
 	};
 
 	let shortUrl = url.replace("https://", "").replace("http://", "");
-	shortUrl = shortUrl.length > 16 ? shortUrl.substring(0, 16) + "..." : shortUrl;
+	shortUrl = shortUrl.length > 20 ? shortUrl.substring(0, 20) + "..." : shortUrl;
 
 	useEffect(() => {
 		const isMobile = window.innerWidth < 768;
@@ -41,9 +41,7 @@ function IPhone({ url, add = 0 }) {
 			<div>
 				<div className={style.iphone}>
 					<div className={style.screen}>
-						<div className={style.statusBar}>
-							<div className={style.time}>{moment().format("HH:mm")}</div>
-						</div>
+						<div className={style.statusBar}></div>
 						<div className={style.safeArea}>
 							<iframe src={url} allowFullScreen />
 						</div>
