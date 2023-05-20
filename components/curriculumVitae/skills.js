@@ -25,13 +25,13 @@ function Skills() {
 					<div>Databases: MySQL, MSSQL, PostgreSQL, MongoDB, Firebase</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
-					<div>Tools: Git, AWS, Google Cloud, Azure, Nginx, OAuth 2.0, RESTfull API, GraphQL</div>
+					<div>Tools: Git, AWS, Google Cloud, Azure, Nginx, OAuth 2.0, REST API, GraphQL</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
 					<div>Library: Socket.IO, JWT, Chart.js, bcrypt, Three.js, Moment, etc.</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
-					<div>Design: UI/UX, Photoshop, Illustrator, Lightroom, Blender, Sketch, Figma</div>
+					<div>Design: UI/UX, Photoshop, Lightroom, Blender, Sketch, Figma</div>
 				</Animation>
 			</div>
 		</section>
