@@ -13,7 +13,7 @@ function Skills() {
 			</Animation>
 			<div className="text-xl flex gap-3 flex-col lg:pl-6 pl-0 tracking-tightest">
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
-					<div>Languages: JavaScript, Python, Swift, Java, PHP</div>
+					<div>Languages: JavaScript, TypeScript, Python, Swift, Java, PHP</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
 					<div>Markup Language: HTML5, CSS3, SASS, Bootstrap, Tailwind CSS</div>
@@ -25,10 +25,10 @@ function Skills() {
 					<div>Databases: MySQL, MSSQL, PostgreSQL, MongoDB, Firebase</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
-					<div>Tools: Git, AWS, Google Cloud, Azure, Nginx, QGIS, OAuth 2.0, JIRA</div>
+					<div>Tools: Git, AWS, Google Cloud, Azure, Nginx, OAuth 2.0, RESTfull API, GraphQL</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
-					<div>Library: Socket.IO, JWT, Chart.js, bcrypt, Three.js, Moment and more</div>
+					<div>Library: Socket.IO, JWT, Chart.js, bcrypt, Three.js, Moment, etc.</div>
 				</Animation>
 				<Animation className="text-xl pb3 font-thin" animation={animation}>
 					<div>Design: UI/UX, Photoshop, Illustrator, Lightroom, Blender, Sketch, Figma</div>
